@@ -31,6 +31,29 @@ public class GameTest
     Dice dieSpade;
     Dice dieHeart;
     Dice dieDiamond;
+
+    final static int START_BALANCE = 100;
+
+	/*
+	 * To test:
+	 * getDiceValues - it seems relatively straightforward,
+	 * but I don't know what the unmodifiable list thing
+	 * is meant to do. I might add a test for it when I understand
+	 * the purpose a little better.
+	 * playRound: this is a very important function. Will split this
+	 * into pieces.
+	 *
+	 */
+
+    Game gameOneOrNoMatches;
+    Game gameTwoMatches;
+    Game gameThreeMatches;
+    Player player;
+    DiceValue pickAnchor;
+    DiceValue pickSpade;
+    Dice dieSpade;
+    Dice dieHeart;
+    Dice dieDiamond;
     final static int START_BALANCE = 100;
 
     public GameTest()
