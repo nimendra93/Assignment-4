@@ -40,8 +40,6 @@ public class Game
 		if (pick == null) throw new IllegalArgumentException("Pick cannot be negative.");
 		if (bet < 0) throw new IllegalArgumentException("Bet cannot be negative.");
 
-		player.takeBet(bet);
-
 		int matches = 0;
 		for (Dice d : dice)
 		{
@@ -57,6 +55,10 @@ public class Game
 		if (matches > 0)
 		{
 			player.receiveWinnings(winnings);
+		}
+		else
+		{
+			player.takeBet(bet);
 		}
 		return winnings;
 	}
