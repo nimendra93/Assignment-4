@@ -1,5 +1,6 @@
-package com.nimendra;
+package tests;
 
+import com.nimendra.Player;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
