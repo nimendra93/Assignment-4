@@ -1,5 +1,6 @@
-package com.nimendra;
+package tests;
 
+import com.nimendra.DiceValue;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,29 +11,45 @@ public class DiceValueTest {
     public void TestToString(){
 
         DiceValue diceValue = DiceValue.SPADE;
+
         String sDiceValue = diceValue.toString(diceValue);
         assertEquals(true, sDiceValue.equals("Spade"));
 
-        diceValue = DiceValue.HEART;
-        sDiceValue = diceValue.toString(diceValue);
-        assertEquals(true, sDiceValue.equals("Heart"));
-
-        diceValue = DiceValue.CLUB;
-        sDiceValue = diceValue.toString(diceValue);
-        assertEquals(true, sDiceValue.equals("Club"));
-
-        diceValue = DiceValue.DIAMOND;
-        sDiceValue = diceValue.toString(diceValue);
-        assertEquals(true, sDiceValue.equals("Diamond"));
-
-        diceValue = DiceValue.CROWN;
-        sDiceValue = diceValue.toString(diceValue);
-        assertEquals(true, sDiceValue.equals("Crown"));
-
+        /*
+            Anchor Test
+         */
         diceValue = DiceValue.ANCHOR;
         sDiceValue = diceValue.toString(diceValue);
         assertEquals(true, sDiceValue.equals("Anchor"));
 
+        /*
+            CLUB Test
+         */
+        diceValue = DiceValue.CLUB;
+        sDiceValue = diceValue.toString(diceValue);
+        assertEquals(true, sDiceValue.equals("Club"));
+
+        /*
+            CROWN test
+         */
+        diceValue = DiceValue.CROWN;
+        sDiceValue = diceValue.toString(diceValue);
+        assertEquals(true, sDiceValue.equals("Crown"));
+
+
+        /*
+            Hearts Test
+         */
+        diceValue = DiceValue.HEART;
+        sDiceValue = diceValue.toString(diceValue);
+        assertEquals(true, sDiceValue.equals("Heart"));
+
+        /*
+            Diamonds Test
+         */
+        diceValue = DiceValue.DIAMOND;
+        sDiceValue = diceValue.toString(diceValue);
+        assertEquals(true, sDiceValue.equals("Diamond"));
     }
 
     @Test
